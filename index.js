@@ -146,6 +146,7 @@ function resetState(){
 
 function selectAnswer(e){
     const selectedButton = e.target;
+    console.log(e);
     const isCorrect = selectedButton.dataset.correct === 'true';
     if(isCorrect){
         selectedButton.classList.add('correct')
