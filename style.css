@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #041E50;
+    caret-color: transparent;
+}
+
+#root{
+    max-width: 50%;
+    height:550px;
+    max-height: 100%;
+    margin: 15vh auto 15vh  ;
+    background-color: white;
+    border-radius: 1vw;
+    padding:2em;
+}
+
+#title{
+    padding: 10px;
+}
+
+#title h1{
+    color:hsl(219, 90%, 10%);
+}
+
+#heading{
+    font-size: 1.5rem;
+    margin: 1vw 0.3vw 1vw auto;
+    padding: 10px;
+    color:hsl(219, 90%, 10%);
+}
+
+.quiz{
+    font-size: 1.5rem;
+}
+
+
+#answer{
+    display: grid;
+    gap: 15px;
+}
+
+.btn{
+    margin: auto;
+    width: 90%;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid hsl(219, 90%, 10%);
+    font-size: large;
+    transition: all 300ms;
+}
+.btn:hover{
+    scale:1.1;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+.btn:active{
+    opacity: 0.8;
+    transform: translateY(5px);
+}
+
+.submit-btn{
+    text-align: center;
+    padding: 10px;
+    margin: 5% auto;
+    padding: 10px;
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color:#041E50;
+    font-size: medium;
+    color:white;
+    box-shadow: 0 0 10px hsl(219, 90%, 26%);
+    transition: all 300ms;
+}
+
+
+.submit-btn:hover{
+    scale:1.2;
+    color: #041E50;
+    background-color: white;
+}
+
+.submit-btn:active{
+    opacity: 0.7;
+    transform: translateY(2px);
+}
+
+button:disabled{
+    color:black;
+    opacity: 0.9;
+    cursor: no-drop;
+}
+
+.correct{
+    background-color:#9EE0BB    ;
+}
+
+.correct:hover{
+    background-color: hsl(146, 52%, 45%);
+    opacity: 0.8;
+
+}
+
+.incorrect{
+    background-color:#FF9B91;
+}
+
+.incorrect:hover{
+    background-color:hsl(5, 86%, 41%);
+    opacity: 0.8;
+}
+
+
+
+
+
+@media (max-width:650px){
+    #root{
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width:450px){
+    #root{
+        max-width: 90%;
+        height: auto;
+    }
+}
